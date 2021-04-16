@@ -14,13 +14,11 @@ public class Main {
 		start();
 	}
 	public static void start() {
-		int cases = sc.nextInt();
-		sc.nextLine();
+		int cases = Integer.parseInt(sc.nextLine());
 		int[] disks = new int[cases];
 		int repeat=0;
 		while(repeat<cases){
-			disks[repeat]=sc.nextInt();
-			sc.nextLine();
+			disks[repeat]=Integer.parseInt(sc.nextLine());			
 			repeat++;			
 		}
 		for (int i=0;i<disks.length;i++) {
@@ -29,7 +27,6 @@ public class Main {
 			h.setTowers(disks[i]);
 			h.hanoiTowers(disks[i]);	
 			System.out.println("");
-
 		}
 	}
 
