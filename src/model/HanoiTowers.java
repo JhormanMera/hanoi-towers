@@ -4,11 +4,14 @@ public class HanoiTowers {
 	private int origin;
 	private int aux;
 	private int dest;
+	private static final String TOWER_1="A";
+	private static final String TOWER_2="B";
+	private static final String TOWER_3="C";
 
 	public HanoiTowers() {
 	}
 	public void hanoiTowers(int d) {
-		hanoiTowers(d,"A","B","C");
+		hanoiTowers(d,TOWER_1,TOWER_2,TOWER_3);
 	}
 	
 	public void setTowers(int d) {
@@ -32,28 +35,29 @@ public class HanoiTowers {
 	
 	private void hanoiTowers(String o, String des) {
 		switch(o) {
-		case "A":
+		case TOWER_1:
 			origin--;
 		break;
-		case "B":
+		case TOWER_2:
 			aux--;
 		break;	
-		case "C":
+		case TOWER_3:
 			dest--;
 		break;
 		}
 		switch(des) {
-		case "A":
+		case TOWER_1:
 			origin++;
 		break;
-		case "B":
+		case TOWER_2:
 			aux++;
 		break;
-		case "C":
+		case TOWER_3:
 			dest++;
 		break;
 		}
 	}
+
 
 	/*
 	public void hanoiTowers(int d) {

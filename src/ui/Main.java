@@ -1,9 +1,10 @@
 package ui;
 
-
 import java.util.Scanner;
 
 import model.HanoiTowers;
+
+
 
 public class Main {
 	private static Scanner sc =new Scanner(System.in);
@@ -29,8 +30,6 @@ public class Main {
 			System.out.println("");
 		}
 	}
-
-
-
-
 }
+
+
