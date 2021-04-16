@@ -6,9 +6,6 @@ public class HanoiTowers {
 	private int dest;
 
 	public HanoiTowers() {
-		origin=0;
-		aux=0;
-		dest=0;
 	}
 	public void hanoiTowers(int d) {
 		hanoiTowers(d,"A","B","C");
